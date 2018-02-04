@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!-- set all page center -->
+  <div class="flex flex-col items-center">
+    <img class="rounded-full h-32 w-32" margin-bottom [src]="photoURL">
+    <h4 text-uppercase>{{name}}</h4>
+    <p>{{email}}</p>
+    
+  </div>
+
+  <ion-list margin-top>
+    <ion-item class="text-xl">
+      Age : {{age}}
+    </ion-item>
+    <ion-item class="text-xl">
+      Tel. : {{tel}}
+    </ion-item>
+  </ion-list>
+<button ion-button full clear (click)="logout()">LOGOUT</button>
+</ion-content>
